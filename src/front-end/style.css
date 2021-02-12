@@ -1,0 +1,11 @@
+html {
+    background-color: rgba(240, 224, 11, 0.63);
+}
+
+.app-background {
+    background-color: rgb(185, 12, 12);
+    color: white;
+    display: grid;
+    text-align: center;
+
+}
