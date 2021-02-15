@@ -22,6 +22,7 @@ html {
 button{
     font-size: 4vw;
     font-family: 'Catamaran',sans-serif;
+    border-radius: 10px;
 }
 footer{
     font-size: 2vw;
