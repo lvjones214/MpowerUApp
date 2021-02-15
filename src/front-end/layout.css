@@ -13,4 +13,21 @@
     width: 50vw;
     margin: 0 auto;
 }
-
+.buttons{
+    margin-top: 5%;
+}
+.customizeList{
+    margin-top:5%;
+}
+button {
+    display: grid;
+    padding: 1%;
+    margin:0 auto;
+}
+footer {
+    text-align: center;
+    width:100%;
+    position:absolute;
+    bottom:0;
+    height:2.5rem;
+}
