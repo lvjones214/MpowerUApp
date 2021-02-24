@@ -31,3 +31,8 @@ footer {
     bottom:0;
     height:2.5rem;
 }
+
+.all-resource-buttons {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
