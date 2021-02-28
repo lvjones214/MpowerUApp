@@ -23,11 +23,12 @@ button {
     display: grid;
     padding: 1%;
     margin:0 auto;
+    width: 40vw;
 }
 footer {
     text-align: center;
     width:100%;
-    position:absolute;
+    position:relative;
     bottom:0;
     height:2.5rem;
 }
@@ -35,4 +36,14 @@ footer {
 .all-resource-buttons {
     display: grid;
     grid-template-columns: 50% 50%;
+}
+#category-button{
+    margin-top: 5%;
+    padding: 5%;
+}
+.org-information{
+    padding: 7%;
+}
+#org-entries{
+    margin-top: 5%;
 }

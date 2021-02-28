@@ -24,6 +24,26 @@ button{
     font-family: 'Catamaran',sans-serif;
     border-radius: 10px;
 }
+a{
+    text-decoration: none;
+}
+a:link{
+    color: var(--dark_blue);
+}
+a:visited{
+    color:var(--salmon);
+}
+a:hover{
+    color: var(--light_blue);
+}
+.org-name{
+    font-size: 6.5vw;
+    font-weight: bolder;
+    text-align: center;
+}
 footer{
     font-size: 2vw;
+}
+#org-entries{
+    font-size: 5vw;
 }
