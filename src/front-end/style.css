@@ -1,0 +1,49 @@
+:root{
+    --salmon: #fe938c;
+    --beige:#e6b89c;
+    --tan: #ead2ac;
+    --light_blue: #9cafb7;
+    --dark_blue: #4281a4;
+}
+html {
+    background-color: var(--tan);
+    font-family: 'Catamaran', sans-serif;
+}
+
+.app-background {
+    background-color: var(--dark_blue);
+    color: white;
+    display: grid;
+    text-align: center;
+}
+.description{
+    font-size: 5vw;
+}
+button{
+    font-size: 4vw;
+    font-family: 'Catamaran',sans-serif;
+    border-radius: 10px;
+}
+a{
+    text-decoration: none;
+}
+a:link{
+    color: var(--dark_blue);
+}
+a:visited{
+    color:var(--salmon);
+}
+a:hover{
+    color: var(--light_blue);
+}
+.org-name{
+    font-size: 6.5vw;
+    font-weight: bolder;
+    text-align: center;
+}
+footer{
+    font-size: 2vw;
+}
+#org-entries{
+    font-size: 5vw;
+}
