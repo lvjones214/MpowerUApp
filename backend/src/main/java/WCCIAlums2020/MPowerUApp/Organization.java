@@ -7,7 +7,7 @@ import java.util.Objects;
 @Entity
 public class Organization {
     @ManyToOne
-    private CategoryGrouping categoryName;
+    private CategoryGrouping categoryGrouping;
     private String name;
     private String website;
     private String phone;
@@ -23,8 +23,8 @@ public class Organization {
     public Organization() {
     }
 
-    public Organization(CategoryGrouping categoryName, String name, String website, String phone, String address, String hours, String description, String instructions) {
-        this.categoryName = categoryName;
+    public Organization(CategoryGrouping categoryGrouping, String name, String website, String phone, String address, String hours, String description, String instructions) {
+        this.categoryGrouping = categoryGrouping;
         this.name = name;
         this.website = website;
         this.phone = phone;
@@ -38,8 +38,8 @@ public class Organization {
         return id;
     }
 
-    public CategoryGrouping getCategoryName() {
-        return categoryName;
+    public CategoryGrouping getCategoryGrouping() {
+        return categoryGrouping;
     }
 
     public String getName() {
@@ -103,18 +103,18 @@ public class Organization {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Organization that = (Organization) o;
-        return Objects.equals(categoryName, that.categoryName) && Objects.equals(name, that.name) && Objects.equals(website, that.website) && Objects.equals(phone, that.phone) && Objects.equals(address, that.address) && Objects.equals(hours, that.hours) && Objects.equals(description, that.description) && Objects.equals(instructions, that.instructions) && Objects.equals(id, that.id);
+        return Objects.equals(categoryGrouping, that.categoryGrouping) && Objects.equals(name, that.name) && Objects.equals(website, that.website) && Objects.equals(phone, that.phone) && Objects.equals(address, that.address) && Objects.equals(hours, that.hours) && Objects.equals(description, that.description) && Objects.equals(instructions, that.instructions) && Objects.equals(id, that.id);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(categoryName, name, website, phone, address, hours, description, instructions, id);
+        return Objects.hash(categoryGrouping, name, website, phone, address, hours, description, instructions, id);
     }
 
     @Override
     public String toString() {
         return "Organization{" +
-                "categoryName=" + categoryName +
+                "categoryGrouping=" + categoryGrouping +
                 ", name='" + name + '\'' +
                 ", website='" + website + '\'' +
                 ", phone='" + phone + '\'' +

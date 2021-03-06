@@ -33,8 +33,7 @@ public class JPAWiringTest {
      organizationRepo.save(testOrganization);
      flushAndClear();
      Organization retrievedOrganization = organizationRepo.findById(testOrganization.getId()).get();
-     assertThat(retrievedOrganization.getCategoryName()).isEqualTo(testCategoryGrouping);
-
+     assertThat(retrievedOrganization.getCategoryGrouping()).isEqualTo(testCategoryGrouping);
 
     }
 
