@@ -1,4 +1,4 @@
-package WCCIAlums2020.MPowerUApp;
+package WCCIAlums2020.MPowerUApp.resources;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

@@ -1,5 +1,9 @@
 package WCCIAlums2020.MPowerUApp;
 
+import WCCIAlums2020.MPowerUApp.resources.CategoryGrouping;
+import WCCIAlums2020.MPowerUApp.resources.Organization;
+import WCCIAlums2020.MPowerUApp.storage.CategoryGroupingRepository;
+import WCCIAlums2020.MPowerUApp.storage.OrganizationRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
@@ -12,7 +16,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class JPAWiringTest {
 
     @Autowired
-    private OrganzationRepository organizationRepo;
+    private OrganizationRepository organizationRepo;
 
     @Autowired
     private CategoryGroupingRepository categoryGroupingRepo;
@@ -45,8 +49,8 @@ public class JPAWiringTest {
         assertThat(retrievedOrganization).isEqualTo(testOrganization);
     }
 
- @Test
- public void organizationObjectShouldHaveCategoryObject(){
+    @Test
+    public void organizationObjectShouldHaveCategoryObject(){
      CategoryGrouping testCategoryGrouping = new CategoryGrouping("category");
      categoryGroupingRepo.save(testCategoryGrouping);
      Organization testOrganization = new Organization(testCategoryGrouping, "name", "website", "phone", "address", "hours", "description", "instructions");
@@ -54,7 +58,6 @@ public class JPAWiringTest {
      flushAndClear();
      Organization retrievedOrganization = organizationRepo.findById(testOrganization.getId()).get();
      assertThat(retrievedOrganization.getCategoryGrouping()).isEqualTo(testCategoryGrouping);
-
     }
 
 }

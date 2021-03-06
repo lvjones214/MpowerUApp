@@ -1,7 +1,6 @@
-package WCCIAlums2020.MPowerUApp;
+package WCCIAlums2020.MPowerUApp.resources;
 
 import javax.persistence.*;
-import java.util.Locale;
 import java.util.Objects;
 
 @Entity
