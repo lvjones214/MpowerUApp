@@ -4,6 +4,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
+import java.util.Objects;
 import java.util.Set;
 
 @Entity
@@ -39,5 +40,26 @@ public class CategoryGrouping {
 
     public void setCategoryName(String categoryName) {
         this.categoryName = categoryName;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        CategoryGrouping that = (CategoryGrouping) o;
+        return Objects.equals(categoryName, that.categoryName) && Objects.equals(id, that.id);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(categoryName, id);
+    }
+
+    @Override
+    public String toString() {
+        return "CategoryGrouping{" +
+                "categoryName='" + categoryName + '\'' +
+                ", id=" + id +
+                '}';
     }
 }

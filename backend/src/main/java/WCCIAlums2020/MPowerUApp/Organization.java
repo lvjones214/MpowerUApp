@@ -2,9 +2,12 @@ package WCCIAlums2020.MPowerUApp;
 
 import javax.persistence.*;
 import java.util.Locale;
+import java.util.Objects;
 
 @Entity
 public class Organization {
+    @ManyToOne
+    private CategoryGrouping categoryName;
     private String name;
     private String website;
     private String phone;
@@ -16,13 +19,12 @@ public class Organization {
     @GeneratedValue
     private Long id;
 
-    @ManyToOne
-    private CategoryGrouping categoryGrouping;
 
     public Organization() {
     }
 
-    public Organization(String name, String website, String phone, String address, String hours, String description, String instructions) {
+    public Organization(CategoryGrouping categoryName, String name, String website, String phone, String address, String hours, String description, String instructions) {
+        this.categoryName = categoryName;
         this.name = name;
         this.website = website;
         this.phone = phone;
@@ -30,9 +32,15 @@ public class Organization {
         this.hours = hours;
         this.description = description;
         this.instructions = instructions;
-
     }
 
+    public Long getId() {
+        return id;
+    }
+
+    public CategoryGrouping getCategoryName() {
+        return categoryName;
+    }
 
     public String getName() {
         return name;
@@ -88,5 +96,33 @@ public class Organization {
 
     public void setInstructions(String instructions) {
         this.instructions = instructions;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Organization that = (Organization) o;
+        return Objects.equals(categoryName, that.categoryName) && Objects.equals(name, that.name) && Objects.equals(website, that.website) && Objects.equals(phone, that.phone) && Objects.equals(address, that.address) && Objects.equals(hours, that.hours) && Objects.equals(description, that.description) && Objects.equals(instructions, that.instructions) && Objects.equals(id, that.id);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(categoryName, name, website, phone, address, hours, description, instructions, id);
+    }
+
+    @Override
+    public String toString() {
+        return "Organization{" +
+                "categoryName=" + categoryName +
+                ", name='" + name + '\'' +
+                ", website='" + website + '\'' +
+                ", phone='" + phone + '\'' +
+                ", address='" + address + '\'' +
+                ", hours='" + hours + '\'' +
+                ", description='" + description + '\'' +
+                ", instructions='" + instructions + '\'' +
+                ", id=" + id +
+                '}';
     }
 }
