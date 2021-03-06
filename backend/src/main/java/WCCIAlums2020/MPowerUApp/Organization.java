@@ -1,9 +1,6 @@
 package WCCIAlums2020.MPowerUApp;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.ManyToOne;
+import javax.persistence.*;
 import java.util.Locale;
 
 @Entity
@@ -18,8 +15,9 @@ public class Organization {
     @Id
     @GeneratedValue
     private Long id;
+
     @ManyToOne
-    private Category categoryName;
+    private CategoryGrouping categoryGrouping;
 
     public Organization() {
     }

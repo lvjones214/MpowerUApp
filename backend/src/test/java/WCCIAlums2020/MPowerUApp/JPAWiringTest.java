@@ -8,7 +8,7 @@ import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 public class JPAWiringTest {
  @Test
  public void organizationObjectShouldHaveCategoryObject(){
-     Organization testOrganization = new Organization("name", "website", "phone", "adress", "hours", "description", "instructions");
+     Organization testOrganization = new Organization("name", "website", "phone", "address", "hours", "description", "instructions");
 
 
     }
