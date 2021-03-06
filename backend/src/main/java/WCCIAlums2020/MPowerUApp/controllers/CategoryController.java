@@ -15,7 +15,7 @@ public class CategoryController {
         this.categoryGroupingStorage = categoryGroupingStorage;
         this.organizationRepo = organizationRepo;
     }
-    
+
     @GetMapping("/api/categories")
     public Iterable<CategoryGrouping> retrieveAllCategories(){
         return categoryGroupingStorage.retrieveAllCategoryGroupings();
