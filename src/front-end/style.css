@@ -41,6 +41,10 @@ a:hover{
     font-weight: bolder;
     text-align: center;
 }
+.category-name{
+    font-size: 6.5vw;
+    font-weight: bolder;
+    text-align: center;}
 footer{
     font-size: 2vw;
 }
