@@ -47,3 +47,9 @@ footer {
 #org-entries{
     margin-top: 5%;
 }
+#category-orgs{
+    margin-top: 5%;
+}
+.orgs-in-the-category{
+    padding: 7%;
+}
