@@ -2,7 +2,6 @@ package WCCIAlums2020.MPowerUApp;
 
 import WCCIAlums2020.MPowerUApp.resources.CategoryGrouping;
 import WCCIAlums2020.MPowerUApp.resources.Organization;
-import WCCIAlums2020.MPowerUApp.storage.CategoryGroupingRepository;
 import WCCIAlums2020.MPowerUApp.storage.CategoryGroupingStorage;
 import WCCIAlums2020.MPowerUApp.storage.OrganizationRepository;
 import org.springframework.boot.CommandLineRunner;
