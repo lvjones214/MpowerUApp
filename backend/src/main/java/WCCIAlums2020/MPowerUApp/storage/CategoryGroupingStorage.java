@@ -15,6 +15,10 @@ public class CategoryGroupingStorage {
         this.categoryGroupingRepo = categoryGroupingRepo;
     }
 
+    public void saveCategory(CategoryGrouping categoryToSave){
+        categoryGroupingRepo.save(categoryToSave);
+    }
+
     public CategoryGrouping retrieveCategoryGroupingById(Long id){
         return categoryGroupingRepo.findById(id).get();
     }
