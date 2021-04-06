@@ -1,0 +1,7 @@
+### Get all categories
+GET http://localhost:8080/api/categories
+Accept: application/json
+
+### Get a category with the given id.
+GET localhost:8080/api/category/1
+
