@@ -104,24 +104,24 @@ public class Populator implements CommandLineRunner {
         categoryGroupingStorage.saveCategory(educationOrTraining);
         Organization filler4= new Organization(educationOrTraining, "Ohio Department of Job and Family Services", "", "", "", "", "", "");
         organizationRepo.save(filler4);
-        Organization filler4= new Organization(educationOrTraining, "Ohio Department of Job and Family Services", "", "", "", "", "", "");
-        organizationRepo.save(filler4);
-        Organization filler4= new Organization(educationOrTraining, "Ohio Department of Job and Family Services", "", "", "", "", "", "");
-        organizationRepo.save(filler4);
-        Organization filler4= new Organization(educationOrTraining, "Ohio Department of Job and Family Services", "", "", "", "", "", "");
-        organizationRepo.save(filler4);
-        Organization filler4= new Organization(educationOrTraining, "Ohio Department of Job and Family Services", "", "", "", "", "", "");
-        organizationRepo.save(filler4);
-        Organization filler4= new Organization(educationOrTraining, "Ohio Department of Job and Family Services", "", "", "", "", "", "");
-        organizationRepo.save(filler4);
-        Organization filler4= new Organization(educationOrTraining, "Ohio Department of Job and Family Services", "", "", "", "", "", "");
-        organizationRepo.save(filler4);
+        Organization filler5= new Organization(educationOrTraining, "Ohio Department of Job and Family Services", "", "", "", "", "", "");
+        organizationRepo.save(filler5);
+        Organization filler6= new Organization(educationOrTraining, "Ohio Department of Job and Family Services", "", "", "", "", "", "");
+        organizationRepo.save(filler6);
+        Organization filler7= new Organization(educationOrTraining, "Ohio Department of Job and Family Services", "", "", "", "", "", "");
+        organizationRepo.save(filler7);
+        Organization filler8= new Organization(educationOrTraining, "Ohio Department of Job and Family Services", "", "", "", "", "", "");
+        organizationRepo.save(filler8);
+        Organization filler9= new Organization(educationOrTraining, "Ohio Department of Job and Family Services", "", "", "", "", "", "");
+        organizationRepo.save(filler9);
+        Organization filler10= new Organization(educationOrTraining, "Ohio Department of Job and Family Services", "", "", "", "", "", "");
+        organizationRepo.save(filler10);
 
 
         CategoryGrouping supportGroups = new CategoryGrouping("Support Groups");
         categoryGroupingStorage.saveCategory(supportGroups);
-        Organization filler5= new Organization(supportGroups, "Ohio Department of Job and Family Services", "https://unemploymenthelp.ohio.gov/", "(877) 644-6562", "P.O. Box 182212, Columbus, OH 43218-2212", "M-F: 7AM-7PM || SA: 9AM-5PM || SU: 9AM-1PM", "Unemployment Insurance Benefits", "https://jfs.ohio.gov/ouio/ClaimInformationPage.stm");
-        organizationRepo.save(filler5);
+        Organization filler11= new Organization(supportGroups, "Ohio Department of Job and Family Services", "https://unemploymenthelp.ohio.gov/", "(877) 644-6562", "P.O. Box 182212, Columbus, OH 43218-2212", "M-F: 7AM-7PM || SA: 9AM-5PM || SU: 9AM-1PM", "Unemployment Insurance Benefits", "https://jfs.ohio.gov/ouio/ClaimInformationPage.stm");
+        organizationRepo.save(filler11);
 
 
 
