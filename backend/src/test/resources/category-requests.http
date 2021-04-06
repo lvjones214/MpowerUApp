@@ -3,5 +3,12 @@ GET http://localhost:8080/api/categories
 Accept: application/json
 
 ### Get a category with the given id.
-GET localhost:8080/api/category/1
+GET localhost:8080/api/categories/1
+
+### Get all Organizations
+GET http://localhost:8080/api/allOrganizations
+Accept: application/json
+
+### Get a single organization with the given id.
+GET http://localhost:8080/api/organization/45
 

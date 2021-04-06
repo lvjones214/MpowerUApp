@@ -24,7 +24,7 @@ public class OrganizationController {
         return organizationRepo.findAll();
     }
 
-    @GetMapping("/api/organization{id}")
+    @GetMapping("/api/organization/{id}")
     public Optional<Organization> retrieveOrganizationById(@PathVariable Long id){
         return organizationRepo.findById(id);
     }

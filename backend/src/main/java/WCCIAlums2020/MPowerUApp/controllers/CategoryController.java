@@ -5,7 +5,9 @@ import WCCIAlums2020.MPowerUApp.storage.CategoryGroupingStorage;
 import WCCIAlums2020.MPowerUApp.storage.OrganizationRepository;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RestController;
 
+@RestController
 public class CategoryController {
 
     private CategoryGroupingStorage categoryGroupingStorage;
@@ -21,7 +23,7 @@ public class CategoryController {
         return categoryGroupingStorage.retrieveAllCategoryGroupings();
     }
 
-    @GetMapping("/api/categories{id}")
+    @GetMapping("/api/categories/{id}")
     public CategoryGrouping retrieveCategoryById(@PathVariable Long id){
         return categoryGroupingStorage.retrieveCategoryGroupingById(id);
     }
